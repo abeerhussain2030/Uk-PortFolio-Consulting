@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Umer Khan - Arch Draftman Portfolio">
+    <meta name="keywords" content="Arch Draftman, Services, portfolio, Umer Khan">
+    <meta name="author" content="Umer Khan">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <title>Portfolio | Umer Khan</title>
+
+    <style>
+        /* Navbar Styling */
+        .l-header {
+            background-color: #0D1730;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .nav__logo {
+            display: flex;
+            align-items: center;
+        }
+        .nav__logo img {
+            height: 80px;
+            width: auto;
+            padding-bottom: 10px;
+        }
+        .nav__logo h1 {
+            margin-left: 10px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 8px;
+        }
+        .nav__menu {
+            display: flex;
+        }
+        .nav__link {
+            color: white;
+        }
+        .nav__link:hover,
+        .nav__link.active-link {
+            color: #ffffff;
+        }
+        .nav__toggle i {
+            color: white;
+        }
+
+        /* IMAGE POPUP MODAL CSS */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 6px;
+        }
+        .close {
+            position: absolute;
+            top: 25px;
+            right: 30px;
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover {
+            color: #bbb;
+        }
+        .footer {
+    background-color: #0D1730;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer__title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer__social a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 0 8px;
+    font-size: 1.4rem;
+    color: #ffffff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.footer__social a:hover {
+    background: #00adb5;
+    transform: translateY(-4px);
+    color: #ffffff;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__logo">
+                <a href="http://wa.me/9203222656714" class="nav__logo">
+                    <img src="assets/img/Logo f 1.png" alt="UK Consultant Logo">
+                </a>
+                <h1>UK CONSULTANT</h1>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <!-- <li class="nav__item"><a href="#work2" class="nav__link">Payment Method</a></li> -->
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!-- HOME SECTION -->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hello,<br> I'm <span class="home__title-color">M. Umer Khan</span><br></h1>
+                <a href="http://wa.me/9203222656714" class="button">Drop A Message For Free Consultation</a>
+            </div>
+
+            <div class="home__social">
+                <a href="http://wa.me/9203222656714" target="_blank" class="home__social-icon"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/umerkhan.916520" target="_blank" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/umerkhan1092" target="_blank" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/umer-khan-yousufzai-a78b69233/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+           <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0" mask-type="alpha">
+                <path d="M9.19 145.96C34.02 76.58 114.86 54.72 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+            </mask>
+
+            <g mask="url(#mask0)">
+                <path d="M9.19 145.96C34.02 76.58 114.86 54.72 184.11 29.48C245.80 6.98 311.86 -14.95 370.73 14.14C431.20 44.02 467.94 107.50 477.19 174.31C485.89 237.22 454.93 294.37 416.50 344.95C373.74 401.24 326.06 462.80 255.44 466.18C179.41 469.83 111.55 422.13 65.15 361.80C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+
+                <image
+                    class="home__blob-img popup-img"
+                    href="assets/img/perfil2.png"
+                    x="60"
+                    y="20"
+                    style="cursor:pointer"
+                />
+            </g>
+        </svg>
+    </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="about__subtitle">I'm Umer Khan, Architectural Draftman</h3>
+                    <p>I offer expert architectural drafting services...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills section" id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills__container bd-grid">
+
+        <!-- LEFT CONTENT -->
+        <div class="skills__content">
+            <h3 class="skills__subtitle">Professional Skills</h3>
+            <p class="skills__text">
+                I specialize in architectural drafting, visualization, and IT-based technical
+                services with a strong focus on accuracy, efficiency, and professional delivery.
+            </p>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-building-house'></i>
+                    <span> AutoCAD</span>
+                </div>
+                <div class="skills__bar skills__autocad"></div>
+                <div class="skills__percentage">95%</div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-image'></i>
+                    <span> Photoshop</span>
+                </div>
+                <div class="skills__bar skills__photoshop"></div>
+                <div class="skills__percentage">90%</div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-business'></i>
+                    <span> Revit</span>
+                </div>
+                <div class="skills__bar skills__revit"></div>
+                <div class="skills__percentage">50%</div>
+            </div>
+
+            <div class="skills__data">
+                <div class="skills__names">
+                    <i class='bx bxs-terminal'></i>
+                    <span>IT Services</span>
+                </div>
+                <div class="skills__bar skills__it"></div>
+                <div class="skills__percentage">85%</div>
+            </div>
+        </div>
+
+        <!-- RIGHT LOGO -->
+        <div class="skills__logo-box">
+            <img src="assets/img/Logo f 1.png" alt="UK Consultant Logo" class="skills__img">
+            
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- WORK SECTION 1 -->
+        <section class="work section" id="work">
+            <h2 class="section-title">GLIMPSES FROM MY WORK</h2>
+            <div class="work__container bd-grid">
+                <!-- ALL YOUR IMAGES -->
+                <a class="work__img"><img src="assets/img/01.jpg"></a>
+                <a class="work__img"><img src="assets/img/02.jpg"></a>
+                <a class="work__img"><img src="assets/img/03.jpg"></a>
+                <a class="work__img"><img src="assets/img/04.jpg"></a>
+                <a class="work__img"><img src="assets/img/05.jpg"></a>
+                <a class="work__img"><img src="assets/img/06.jpg"></a>
+                <a class="work__img"><img src="assets/img/07.jpg"></a>
+                <a class="work__img"><img src="assets/img/08.jpg"></a>
+                <a class="work__img"><img src="assets/img/09.jpg"></a>
+                <a class="work__img"><img src="assets/img/FF10.jpg"></a>
+                <a class="work__img"><img src="assets/img/FF11.jpg"></a>
+                <a class="work__img"><img src="assets/img/10F.jpg"></a>
+                <a class="work__img"><img src="assets/img/11F.jpg"></a>
+                <a class="work__img"><img src="assets/img/9.JPG"></a>
+                <a class="work__img"><img src="assets/img/10.jpg"></a>
+                <a class="work__img"><img src="assets/img/11.jpg"></a>
+                <a class="work__img"><img src="assets/img/12.jpg"></a>
+                <a class="work__img"><img src="assets/img/13.jpg"></a>
+                <a class="work__img"><img src="assets/img/14.jpg"></a>
+                <a class="work__img"><img src="assets/img/17.jpg"></a>
+                <a class="work__img"><img src="assets/img/F17.jpg"></a>
+                <a class="work__img"><img src="assets/img/18.jpg"></a>
+                <a class="work__img"><img src="assets/img/19.jpg"></a>
+                <a class="work__img"><img src="assets/img/23.jpg"></a>
+                <a class="work__img"><img src="assets/img/24.jpg"></a>
+            </div>
+        </section>
+
+        <!-- WORK SECTION 2 -->
+        <section class="work section" id="work">
+            <h2 class="section-title">ONSITE GLIMPSES OF MY PROJECTS</h2>
+            <div class="work__container bd-grid">
+                <!-- YOUR 25 IMAGES -->
+                <a class="work__img"><img src="assets/img/pics/01.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/02.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/03.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/04.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/05.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/06.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/07.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/08.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/09.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/10.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/11.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/12.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/13.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/14.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/15.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/16.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/17.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/18.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/19.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/20.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/21.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/22.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/23.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/24.jpg"></a>
+                <a class="work__img"><img src="assets/img/pics/25.jpg"></a>
+            </div>
+        </section>
+
+        <!-- WORK SECTION 3 -->
+        <section class="work section" id="work">
+            <h2 class="section-title">IT-SERVICES & DOCUMENTATIONS</h2>
+            <div class="work__container bd-grid">
+                <a class="work__img"><img src="assets/img/SP1.jpg"></a>
+                <a class="work__img"><img src="assets/img/SP2.jpg"></a>
+                <a class="work__img"><img src="assets/img/SP3.jpg"></a>
+                <a class="work__img"><img src="assets/img/SP4.jpg"></a>
+                <a class="work__img"><img src="assets/img/SP5.jpg"></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+   <footer class="footer">
+    
+    <div class="footer__social">
+        <a href="https://wa.me/923222656714" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+
+        <a href="https://www.facebook.com/umerkhan.916520" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class='bx bxl-facebook'></i>
+        </a>
+
+        <a href="https://www.instagram.com/umerkhan1092" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class='bx bxl-instagram'></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/umer-khan-yousufzai-a78b69233/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+    </div>
+</footer>
+
+
+
+    <!-- MODAL HTML -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- IMAGE POPUP SCRIPT -->
+    <script>
+        var modal = document.getElementById("imgModal");
+        var modalImg = document.getElementById("modalImg");
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        document.querySelectorAll('.work__img img').forEach(function(img) {
+            img.onclick = function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            }
+        });
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+</html>
